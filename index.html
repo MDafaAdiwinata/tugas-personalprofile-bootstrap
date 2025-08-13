@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Landing Page</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Profil Saya</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Halo, Saya Dafa Adi</h1>
+            <p>Seorang pelajar kreatif yang fokus pada desain web dan pengembangan teknologi.</p>
+            <a href="#about" class="btn btn-light btn-lg">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Tentang Saya</h2>
+            <p class="lead">Saya adalah pelajar yang memiliki minat di bidang teknologi, khususnya pembuatan website.
+                Menguasai HTML, CSS, dan Bootstrap, serta sedang mempelajari JavaScript dan backend development.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Portfolio</h2>
+            <!-- Carousel -->
+            <div id="portfolioCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1600"
+                            class="d-block w-100" alt="Project 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600"
+                            class="d-block w-100" alt="Project 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600"
+                            class="d-block w-100" alt="Project 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Kartu Portfolio -->
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" class="card-img-top"
+                            alt="Web Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">Membuat desain website yang modern dan responsif.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800"
+                            class="card-img-top" alt="UI/UX">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX</h5>
+                            <p class="card-text">Merancang antarmuka yang ramah pengguna dan menarik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                            class="card-img-top" alt="Frontend Dev">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend Dev</h5>
+                            <p class="card-text">Mengimplementasikan desain menjadi website interaktif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Kontak Saya</h2>
+            <p>Ingin bekerja sama? Kirimkan pesan kepada saya!</p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Kirim
+                Pesan</button>
+        </div>
+    </section>
+
+    <!-- Modal Contact Form -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Kirim Pesan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Masukkan email Anda"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea id="pesan" class="form-control" rows="4" placeholder="Tulis pesan Anda..."
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Kirim</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Dafa Adi. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
