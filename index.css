@@ -86,9 +86,26 @@ body {
 
 /* Tutup About Style */
 
-/* Efek hover card */
+/* Portofolio Style */
+
+#portfolio {
+  color: white !important;
+  background-color: #151515 !important;
+}
+
+/* Card */
+.card {
+  transition: all ease 0.5s;
+  background-color: #000;
+  color: #999;
+}
+
 .card:hover {
-  transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.02);
   transition: 0.3s;
+  color: #f0f0f0;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Tutup Portofolio Style */
