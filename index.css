@@ -31,7 +31,11 @@ body {
 }
 
 .nav-link {
-  color: #f0f0f0 !important;
+  color: #999 !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
 }
 
 /* Hero Section Style */
