@@ -117,4 +117,16 @@ body {
   color: #ccc;
 }
 
+.modal-content {
+  background-color: #0d0d0d;
+}
+
 /* Tutup Kontak */
+
+/* Footer */
+
+footer {
+  background-color: #151515;
+}
+
+/* Tutup Footer */
