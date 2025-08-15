@@ -124,39 +124,39 @@
         <div class="container text-center">
             <h2>Kontak Saya</h2>
             <p>Ingin bekerja sama? Kirimkan pesan kepada saya!</p>
-            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Kirim
+            <button class="btn btn-outline-light btn-md" data-bs-toggle="modal" data-bs-target="#contactModal">Kirim
                 Pesan</button>
         </div>
     </section>
 
     <!-- Modal Contact Form -->
     <div class="modal fade" id="contactModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white" style="background-color: #0d0d0d;">
                 <form>
                     <div class="modal-header">
-                        <h5 class="modal-title">Kirim Pesan</h5>
+                        <h5 class="modal-title text-center">Kirim Pesan</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama</label>
-                            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama Anda" required>
+                            <input type="text" id="nama" class="form-control text-white"
+                                style="background-color: #0d0d0d;" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Masukkan email Anda"
-                                required>
+                            <input type="email" id="email" class="form-control text-white"
+                                style="background-color: #0d0d0d;" required>
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea id="pesan" class="form-control" rows="4" placeholder="Tulis pesan Anda..."
-                                required></textarea>
+                            <textarea id="pesan" class="form-control text-white" rows="4"
+                                style="background-color: #0d0d0d;" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success">Kirim</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                     </div>
                 </form>
             </div>
@@ -164,7 +164,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-3" style="background-color: #151515;">
         &copy; 2025 Dafa Adi. All rights reserved.
     </footer>
 
